@@ -2,11 +2,13 @@ package com.xpath;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.support.ui.Select;
 
 public class WriteXpath {
 
-	public static void main(String[] args) {
+	public static void main(String[] args) throws InterruptedException {
 		
 		//set chrome driver path
 		
@@ -22,18 +24,19 @@ public class WriteXpath {
 		
 		driver.manage().window().maximize();
 		
-		//click on the register link
+		WebElement register=driver.findElement(By.xpath("//a[contains(text(),'Register')]"));
+		register.click();
+		WebElement day=driver.findElement(By.name("DateOfBirthDay"));
 		
-		//driver.findElement(By.linkText("Register")).click();
+		Select select=new Select(day);
+		select.selectByVisibleText("19");
+		Thread.sleep(3000);
 		
-		driver.findElement(By.xpath("//a[contains(text(),'Register')]")).click();
+		select.selectByIndex(3);
 		
-		//enter data into firstname
+		Thread.sleep(3000);
 		
-		driver.findElement(By.xpath("//input[starts-with(@id,'First')]")).sendKeys("FirstName");
-		//click on login
-		driver.findElement(By.xpath("//a[starts-with(text(),'Log')]")).click();
-		
+		select.selectByValue("28");
 
 	}
 
