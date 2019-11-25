@@ -1,5 +1,6 @@
 package com.genericmethods;
 
+import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
@@ -167,6 +168,12 @@ public class GenericMethods {
 		}
 		return status;
 		
+		
+	}
+	
+	public void forceClick(WebElement element){
+		JavascriptExecutor js=(JavascriptExecutor) driver;
+		js.executeScript("arguments[0].click();", element);
 		
 	}
 	
