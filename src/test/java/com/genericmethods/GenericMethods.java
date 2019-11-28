@@ -34,7 +34,9 @@ public class GenericMethods {
 				break;
 			}
 			
-			driver.get(url);
+			//driver.get(url);
+			
+			driver.navigate().to(url);
 			driver.manage().window().maximize();
 			System.out.println("Browser "+browser+" is launched sucessfully");
 			
