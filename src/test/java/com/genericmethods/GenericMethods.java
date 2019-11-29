@@ -1,5 +1,9 @@
 package com.genericmethods;
 
+import java.io.File;
+import java.text.SimpleDateFormat;
+import java.util.Date;
+
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -179,7 +183,32 @@ public class GenericMethods {
 		
 	}
 	
+	public String getResultsPath()
+	{
+
+Date d=new Date();
+		
+SimpleDateFormat sdf=new SimpleDateFormat("dd-MM-yyyy");
+
+System.out.println(sdf.format(d));
+
+String currentDate=sdf.format(d);
+
+/*sdf=new SimpleDateFormat("HH:mm:SS");
+
+sdf=new SimpleDateFormat("dd-MM-yyyy HH:mm:SS");
+System.out.println(sdf.format(d));
+*/		
 	
+String path=System.getProperty("user.dir")+"\\Results\\"+currentDate;
+
+
+File f=new File(path);
+
+if(!f.exists())f.mkdirs();
+
+return path;
+	}
 	
 	
 	
