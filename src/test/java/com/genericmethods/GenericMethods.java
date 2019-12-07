@@ -210,7 +210,10 @@ if(!f.exists())f.mkdirs();
 return path;
 	}
 	
+	public void closeBrowser()
+	{ driver.close();
 	
+	}
 	
 	
 	

@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="0" total="2" passed="2">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Suite" duration-ms="14872" started-at="2019-12-07T04:04:44Z" finished-at="2019-12-07T04:04:59Z">
+    <groups>
+    </groups>
+    <test name="Test" duration-ms="14872" started-at="2019-12-07T04:04:44Z" finished-at="2019-12-07T04:04:59Z">
+      <class name="com.testng.Tc_02">
+        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:com.testng.Tc_02@ae45eb6]" name="beforeMethod" is-config="true" duration-ms="6388" started-at="2019-12-07T04:04:52Z" finished-at="2019-12-07T04:04:59Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method status="PASS" signature="login()[pri:0, instance:com.testng.Tc_02@ae45eb6]" name="login" duration-ms="6" started-at="2019-12-07T04:04:59Z" description="This test case will validate digital validation module" finished-at="2019-12-07T04:04:59Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- login -->
+        <test-method status="PASS" signature="afterMethod()[pri:0, instance:com.testng.Tc_02@ae45eb6]" name="afterMethod" is-config="true" duration-ms="232" started-at="2019-12-07T04:04:59Z" finished-at="2019-12-07T04:04:59Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+      </class> <!-- com.testng.Tc_02 -->
+      <class name="com.testng.Tc_01">
+        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:com.testng.Tc_01@68c4039c]" name="beforeMethod" is-config="true" duration-ms="7847" started-at="2019-12-07T04:04:44Z" finished-at="2019-12-07T04:04:52Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method status="PASS" signature="login()[pri:0, instance:com.testng.Tc_01@68c4039c]" name="login" duration-ms="13" started-at="2019-12-07T04:04:52Z" description="This test case will validate the price of a desktop module" finished-at="2019-12-07T04:04:52Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- login -->
+        <test-method status="PASS" signature="afterMethod()[pri:0, instance:com.testng.Tc_01@68c4039c]" name="afterMethod" is-config="true" duration-ms="332" started-at="2019-12-07T04:04:52Z" finished-at="2019-12-07T04:04:52Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+      </class> <!-- com.testng.Tc_01 -->
+    </test> <!-- Test -->
+  </suite> <!-- Suite -->
+</testng-results>
